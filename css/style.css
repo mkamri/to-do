@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper {
+    width: 30rem;
+    border: 2px solid #666;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+header {
+    height: 15rem;
+    width: 100%;
+}
+
+#inputBox {
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    font-size: 1.2rem;
+    text-color: red;
+}
+
+ul {
+    list-style: none;
+    margin-top: .5rem;
+    height: 15rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    overflow-y: scroll;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .8rem 0 .8rem;
+}
+
+li:nth-child(even) {
+    background: #ffffff;
+}
+
+li:nth-child(odd) {
+    background: #ececec;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #666;
+}
