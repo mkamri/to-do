@@ -1,61 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffefee;
+	color: rgb(54, 54, 54);
+	font-family: 'Montserrat', sans-serif;
 }
 
 #wrapper {
-    width: 30rem;
-    border: 2px solid #666;
-    border-radius: 5px;
-    padding: .5rem;
+	width: 30rem;
+	height: 100vh;
+	padding: .5rem;
+	background: #ffffff;
 }
 
+/*-- Header --*/
 header {
-    height: 15rem;
-    width: 100%;
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+#title {
+	align-self: center;
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .1rem;
+}
+
+/*-- Input Box --*/
 
 #inputBox {
-    width: 100%;
-    text-align: center;
-    height: 2rem;
-    font-size: 1.2rem;
-    text-color: red;
+	width: 100%;
+	height: 5vh;
+	border-radius: .5rem;
+	border: none;
+	text-align: center;
+	font-size: .9rem;
+	background-color: #cec7c3;
+
 }
 
-ul {
-    list-style: none;
-    margin-top: .5rem;
-    height: 15rem;
-    font-size: 1.3rem;
-    line-height: 3rem;
-    overflow-y: scroll;
+/*-- The List --*/
+
+#theList {
+	height: 79vh;
+	list-style: none;
+	margin-top: .5rem;
+	line-height: 3rem;
+	letter-spacing: .1rem;
+	font-weight: 300;
+	overflow-y: scroll;
 }
 
 li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 .8rem 0 .8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 .5rem;
+	padding: .1rem .8rem;
+	border-radius: .5rem;
+	margin-top: 1rem;
+	box-shadow: 2px 1px 1px #888;
 }
 
-li:nth-child(even) {
-    background: #ffffff;
+li:nth-child(6n + 1) {
+	background: rgb(248, 175, 175);
 }
 
-li:nth-child(odd) {
-    background: #ececec;
+li:nth-child(6n + 2) {
+	background: rgb(255, 215, 169);
+}
+
+li:nth-child(6n + 3) {
+	background: rgb(255, 248, 209);
+}
+
+li:nth-child(6n + 4) {
+	background: rgb(184, 211, 152);
+}
+
+li:nth-child(6n + 5) {
+	background: rgb(160, 184, 248);
+}
+
+li:nth-child(6n + 6) {
+	background: rgb(228, 205, 255);
 }
 
 .lineThrough {
-    text-decoration: line-through;
-    color: #666;
+	text-decoration: line-through;
+	color: #666;
+}
+
+/*-- Hover Effects--*/
+
+.icon {
+	transition: color .3s ease-in;
+}
+
+.icon:hover {
+	color: rgb(138, 138, 138);
+	transition: color .3s ease-in;
+	cursor: pointer;
 }
