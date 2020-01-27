@@ -47,7 +47,6 @@ header {
 	text-align: center;
 	font-size: .9rem;
 	background-color: #cec7c3;
-
 }
 
 /*-- The List --*/
@@ -99,7 +98,7 @@ li:nth-child(6n + 6) {
 
 .lineThrough {
 	text-decoration: line-through;
-	color: #666;
+	color: #555;
 }
 
 /*-- Hover Effects--*/
